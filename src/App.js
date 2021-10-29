@@ -1,7 +1,6 @@
 import './App.css';
-import logo from './logo.svg';
 import Header from './components/Header/Header';
-import Resturent from './components/Meals/Resturent/Resturent';
+import Resturent from './components/Resturent/Resturent'
 
 function App() {
   return (

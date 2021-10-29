@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Meal from '../Meal';
-
+import Meal from '../Meal/Meal';
+import './Resturent.css';
+import OrderList from '../Order/OrderList';
 const Resturent = () => {
 
     const [meals, setMeals] = useState([]);
@@ -16,14 +17,22 @@ const Resturent = () => {
 
     return (
         <div className='resturent-menu'>
-            <div className='meals-container'> 
-            {/* {
-                meals.map(meal => )
-            } */}
-            <Meal>
+            <div className='meals-container'>
+                {
+                    meals.map(meal => <Meal
+                        key={meal.idMeal}
+                        meal={meal}
+                    >
 
-</Meal>
+                    </Meal>)
+                }
+
             </div>
+            <div className='order-list'>
+
+                    <OrderList order={order}></OrderList>
+
+                </div>
 
         </div>
     );
