@@ -10,7 +10,7 @@ const Meal = (props) => {
             <img src={strMealThumb} alt="pic"/>
             <h4>{strMeal}</h4>
             <p>{strInstructions.slice(0, 100)}</p>
-            <button onClick={()=>handleAddToOrder(meal)}>Add this food</button>
+            <button className="search-btn rounded" onClick={()=>handleAddToOrder(meal)}>Add this food</button>
         </div>
     );
 };
