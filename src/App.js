@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header';
-import Resturent from './components/Resturent/Resturent'
+import Resturent from './components/Resturent/Resturent';
 
 function App() {
   return (

@@ -60,7 +60,10 @@ const Resturent = () => {
                 }
             </div>
             <div className="order-list">
-                <OrderList order={order}></OrderList>
+                <OrderList order={order}
+                     
+                ></OrderList>
+
             </div>
         </div>
 
